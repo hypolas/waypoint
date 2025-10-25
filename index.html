@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Nomad Webserver</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .info {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .info-item {
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+        .label {
+            font-weight: bold;
+            color: #ffd700;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9em;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Nomad + Waypoint Demo</h1>
+        <p style="text-align: center; font-size: 1.2em;">Serveur web de démonstration</p>
+
+        <div class="info">
+            <div class="info-item">
+                <span class="label">Job:</span> demo-webserver
+            </div>
+            <div class="info-item">
+                <span class="label">Deployed by:</span> HashiCorp Waypoint
+            </div>
+            <div class="info-item">
+                <span class="label">Orchestrated by:</span> HashiCorp Nomad
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>✅ Ce serveur est déployé avec Waypoint et géré par Nomad</p>
+        </div>
+    </div>
+</body>
+</html>
